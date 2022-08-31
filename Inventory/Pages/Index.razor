@@ -2,23 +2,6 @@
 
 <PageTitle>Index</PageTitle>
 
-<input type="text" @bind-value="@message"/>
-
-<input type="text" @bind-value="@message2"/>
-
-<input type="button" value="Haz Click Aqui" @onclick="ChangeText" />
-
-<div>
-    @message
-</div>
-
-@code {
-    // Inicializamos variables
-    string message = "Esto es un mensaje de prueba";
-    string message2 = "";
-
-    // Creamos evento en el cual igualamos al texto recolectado en el input 1 y lo enviamos al input 2 con texto adicional
-    private void ChangeText() {
-        message2 = message + ", al input 2";
-    }
-}
+<Form001 Message="Hola mundo"></Form001>
+<Form001 Message="Hello world"></Form001>
+<Form001 Message="otro texto de prueba"></Form001>
