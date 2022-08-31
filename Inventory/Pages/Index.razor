@@ -2,8 +2,23 @@
 
 <PageTitle>Index</PageTitle>
 
-<h1>Hello, world!</h1>
+<input type="text" @bind-value="@message"/>
 
-Welcome to your new app.
+<input type="text" @bind-value="@message2"/>
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+<input type="button" value="Haz Click Aqui" @onclick="ChangeText" />
+
+<div>
+    @message
+</div>
+
+@code {
+    // Inicializamos variables
+    string message = "Esto es un mensaje de prueba";
+    string message2 = "";
+
+    // Creamos evento en el cual igualamos al texto recolectado en el input 1 y lo enviamos al input 2 con texto adicional
+    private void ChangeText() {
+        message2 = message + ", al input 2";
+    }
+}
