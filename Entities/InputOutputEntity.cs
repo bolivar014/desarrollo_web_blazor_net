@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Entities
 {
-    internal class InputOutputEntity
+    public class InputOutputEntity
     {
         [Key]
         [StringLength(50)]

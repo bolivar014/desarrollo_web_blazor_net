@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Entities
 {
-    internal class StorageEntity
+    public class StorageEntity
     {
         [Key]
         [StringLength(50)]
@@ -27,7 +27,7 @@ namespace Entities
 
         //Relacion con bodegas (WherehouseEntity)
         public string WarehouseId { get; set; }
-        public WarehouseEntity Warehouse { get; set; }
+        public WherehouseEntity Warehouse { get; set; }
 
 
         //Relación con movimientos (InputOutputEntity)
