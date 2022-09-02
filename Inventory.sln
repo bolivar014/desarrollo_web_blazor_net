@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inventory", "Inventory\Inventory.csproj", "{FF12F169-B753-4F35-A8BB-476E60BCE4BF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{4323B8C8-48A7-489F-896A-F718AA09B58E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{FF12F169-B753-4F35-A8BB-476E60BCE4BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF12F169-B753-4F35-A8BB-476E60BCE4BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF12F169-B753-4F35-A8BB-476E60BCE4BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4323B8C8-48A7-489F-896A-F718AA09B58E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4323B8C8-48A7-489F-896A-F718AA09B58E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4323B8C8-48A7-489F-896A-F718AA09B58E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4323B8C8-48A7-489F-896A-F718AA09B58E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
