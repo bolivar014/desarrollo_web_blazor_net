@@ -27,7 +27,7 @@ namespace Entities
 
         //Relacion con bodegas (WherehouseEntity)
         public string WarehouseId { get; set; }
-        public WherehouseEntity Warehouse { get; set; }
+        public WarehouseEntity Warehouse { get; set; }
 
 
         //Relación con movimientos (InputOutputEntity)

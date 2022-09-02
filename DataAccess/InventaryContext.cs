@@ -13,7 +13,7 @@ namespace DataAccess
         public DbSet<ProductEntity> Products { get; set; }
         public DbSet<CategoryEntity> Categories { get; set; }
         public DbSet<InputOutputEntity> InOuts { get; set; }
-        public DbSet<WherehouseEntity> Wherehouses { get; set; }
+        public DbSet<WarehouseEntity> Warehouses { get; set; }
         public DbSet<StorageEntity> Storages { get; set; }
     }
 }

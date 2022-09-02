@@ -2,7 +2,7 @@
 
 namespace Entities
 {
-    public class WherehouseEntity
+    public class WarehouseEntity
     {
         [Key]
         [StringLength(50)]
