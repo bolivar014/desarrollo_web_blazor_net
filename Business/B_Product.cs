@@ -25,6 +25,17 @@ namespace Business
             }
         }
 
+        // Listamos datos de producto a editar
+        public static ProductEntity ProductById(string id)
+        {
+            // Generamos conexión temporal a la DB
+            using (var db = new InventaryContext())
+            {
+                // Retornamos el db.Context de Products
+                return db.Products.ToList().LastOrDefault(p => p.ProductId == id);
+            }
+        }
+
         // Creamos producto
         public static void CreateProduct(ProductEntity oProduct)
         {
