@@ -15,7 +15,7 @@ namespace Business
     public class B_Product
     {
         // Listamos los datos que exista en DB.
-        public List<ProductEntity> ProductList()
+        public static List<ProductEntity> ProductList()
         {
             // Generamos conexión temporal a la DB
             using (var db = new InventaryContext())
@@ -26,7 +26,7 @@ namespace Business
         }
 
         // Creamos producto
-        public void CreateProduct(ProductEntity oProduct)
+        public static void CreateProduct(ProductEntity oProduct)
         {
             using (var db = new InventaryContext())
             {
@@ -35,7 +35,7 @@ namespace Business
         }
 
         // Actualizamos producto
-        public void UpdateProduct(ProductEntity oProduct)
+        public static void UpdateProduct(ProductEntity oProduct)
         {
             using (var db = new InventaryContext())
             {

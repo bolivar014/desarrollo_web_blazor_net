@@ -1,0 +1,17 @@
+C:\Users\JUAN-\source\repos\Inventory\Business\bin\Debug\net6.0\Business.deps.json
+C:\Users\JUAN-\source\repos\Inventory\Business\bin\Debug\net6.0\Business.dll
+C:\Users\JUAN-\source\repos\Inventory\Business\bin\Debug\net6.0\Business.pdb
+C:\Users\JUAN-\source\repos\Inventory\Business\bin\Debug\net6.0\DataAccess.dll
+C:\Users\JUAN-\source\repos\Inventory\Business\bin\Debug\net6.0\Entities.dll
+C:\Users\JUAN-\source\repos\Inventory\Business\bin\Debug\net6.0\DataAccess.pdb
+C:\Users\JUAN-\source\repos\Inventory\Business\bin\Debug\net6.0\Entities.pdb
+C:\Users\JUAN-\source\repos\Inventory\Business\obj\Debug\net6.0\Business.csproj.AssemblyReference.cache
+C:\Users\JUAN-\source\repos\Inventory\Business\obj\Debug\net6.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JUAN-\source\repos\Inventory\Business\obj\Debug\net6.0\Business.AssemblyInfoInputs.cache
+C:\Users\JUAN-\source\repos\Inventory\Business\obj\Debug\net6.0\Business.AssemblyInfo.cs
+C:\Users\JUAN-\source\repos\Inventory\Business\obj\Debug\net6.0\Business.csproj.CoreCompileInputs.cache
+C:\Users\JUAN-\source\repos\Inventory\Business\obj\Debug\net6.0\Business.csproj.CopyComplete
+C:\Users\JUAN-\source\repos\Inventory\Business\obj\Debug\net6.0\Business.dll
+C:\Users\JUAN-\source\repos\Inventory\Business\obj\Debug\net6.0\refint\Business.dll
+C:\Users\JUAN-\source\repos\Inventory\Business\obj\Debug\net6.0\Business.pdb
+C:\Users\JUAN-\source\repos\Inventory\Business\obj\Debug\net6.0\ref\Business.dll
