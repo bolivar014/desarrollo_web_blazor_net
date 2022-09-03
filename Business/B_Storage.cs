@@ -26,6 +26,7 @@ namespace Business
             using (var db = new InventaryContext())
             {
                 db.Storages.Add(oStorage);
+                db.SaveChanges();
             }
         }
 

@@ -27,6 +27,7 @@ namespace Business
             using (var db = new InventaryContext())
             {
                 db.InOuts.Add(oInputOutput);
+                db.SaveChanges();
             }
         }
 

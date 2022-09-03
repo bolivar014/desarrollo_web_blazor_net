@@ -31,6 +31,7 @@ namespace Business
             using (var db = new InventaryContext())
             {
                 db.Products.Add(oProduct);
+                db.SaveChanges();
             }
         }
 

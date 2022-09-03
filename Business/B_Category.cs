@@ -28,6 +28,7 @@ namespace Business
             using (var db = new InventaryContext()) {
                 // Creamos registro en Db con el OCategory -> Objeto Categoria
                 db.Categories.Add(oCategory);
+                db.SaveChanges();
             }
         }
 
