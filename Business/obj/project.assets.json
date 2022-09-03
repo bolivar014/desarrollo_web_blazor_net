@@ -772,20 +772,6 @@
           }
         }
       },
-      "Business/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "DataAccess": "1.0.0",
-          "Entities": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Business.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Business.dll": {}
-        }
-      },
       "DataAccess/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -2141,11 +2127,6 @@
         "version.txt"
       ]
     },
-    "Business/1.0.0": {
-      "type": "project",
-      "path": "../Business/Business.csproj",
-      "msbuildProject": "../Business/Business.csproj"
-    },
     "DataAccess/1.0.0": {
       "type": "project",
       "path": "../DataAccess/DataAccess.csproj",
@@ -2159,7 +2140,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Business >= 1.0.0",
+      "DataAccess >= 1.0.0",
       "Entities >= 1.0.0"
     ]
   },
@@ -2170,11 +2151,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JUAN-\\source\\repos\\Inventory\\Inventory\\Inventory.csproj",
-      "projectName": "Inventory",
-      "projectPath": "C:\\Users\\JUAN-\\source\\repos\\Inventory\\Inventory\\Inventory.csproj",
+      "projectUniqueName": "C:\\Users\\JUAN-\\source\\repos\\Inventory\\Business\\Business.csproj",
+      "projectName": "Business",
+      "projectPath": "C:\\Users\\JUAN-\\source\\repos\\Inventory\\Business\\Business.csproj",
       "packagesPath": "C:\\Users\\JUAN-\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JUAN-\\source\\repos\\Inventory\\Inventory\\obj\\",
+      "outputPath": "C:\\Users\\JUAN-\\source\\repos\\Inventory\\Business\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2195,8 +2176,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\JUAN-\\source\\repos\\Inventory\\Business\\Business.csproj": {
-              "projectPath": "C:\\Users\\JUAN-\\source\\repos\\Inventory\\Business\\Business.csproj"
+            "C:\\Users\\JUAN-\\source\\repos\\Inventory\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\JUAN-\\source\\repos\\Inventory\\DataAccess\\DataAccess.csproj"
             },
             "C:\\Users\\JUAN-\\source\\repos\\Inventory\\Entities\\Entities.csproj": {
               "projectPath": "C:\\Users\\JUAN-\\source\\repos\\Inventory\\Entities\\Entities.csproj"
@@ -2225,9 +2206,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
