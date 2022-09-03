@@ -1,6 +1,15 @@
 ﻿@using Entities
 @using Business
 
+<hr />
+    <select class="form-control" @onchange="CategoryChanged">
+        <option value="" selected>Seleccione Categoria...</option>
+        @foreach(var category in categories) {
+            <option value="@category.CategoryId">@category.CategoryName</option>
+        }
+    </select>
+<hr />
+
 <table class="table table-responsive table-hover table-bordered">
     <thead>
         <tr>
@@ -10,7 +19,8 @@
         </tr>
     </thead>
     <tbody>
-        @foreach(var product in products) {
+        @foreach (var product in tempProducts)
+        {
             <tr>
                 <td>@product.ProductId</td>
                 <td>@product.ProductName</td>
@@ -20,12 +30,32 @@
     </tbody>
 </table>
 
+@message
+
 @code {
     // Listamos los productos existentes
     List<ProductEntity> products = new List<ProductEntity>();
+    List<ProductEntity> tempProducts = new List<ProductEntity>();
+    List<CategoryEntity> categories = new List<CategoryEntity>();
+
+    string message = "";
 
     // Inicializamos override
     protected override async Task OnInitializedAsync() {
         products = B_Product.ProductList();
+        tempProducts = products;
+        categories = B_Category.CategoryList();
+    }
+
+    // Evento para filtar por tipos de categorias
+    private void CategoryChanged(ChangeEventArgs e) {
+        // Obtenemos el string del mensaje cambiante
+        // message = e.Value.ToString();
+        if (e.Value.ToString() == "" || e.Value.ToString() == " " || e.Value.ToString() == null) {
+            tempProducts = products;
+        } else {
+            tempProducts = products.Where(c => c.CategoryId == e.Value.ToString()).ToList();
+        }
+        
     }
 }
