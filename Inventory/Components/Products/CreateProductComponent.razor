@@ -42,6 +42,7 @@
     }
 
     private void SaveProduct() {
-        B_Product.CreateProduct(oProduct);
+        B_Product.CreateProduct(oProduct); 
+        NavManager.NavigateTo("product/list");
     }
 }
