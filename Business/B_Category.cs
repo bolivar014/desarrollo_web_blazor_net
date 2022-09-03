@@ -14,7 +14,7 @@ namespace Business
     public class B_Category
     {
         // Listamos los datos que exista en DB.
-        public List<CategoryEntity> CategoryList() {
+        public static List<CategoryEntity> CategoryList() {
             // Generamos conexión temporal a la DB
             using (var db = new InventaryContext()) {
                 // Retornamos el db.Context de categories
@@ -23,7 +23,7 @@ namespace Business
         }
 
         // Creamos Categoria
-        public void CreateCategory(CategoryEntity oCategory) {
+        public static void CreateCategory(CategoryEntity oCategory) {
             // Generamos conexión temporal a la DB
             using (var db = new InventaryContext()) {
                 // Creamos registro en Db con el OCategory -> Objeto Categoria
@@ -32,7 +32,7 @@ namespace Business
         }
 
         // Evento para la actualización de la categoria
-        public void UpdateCategory(CategoryEntity oCategory) {
+        public static void UpdateCategory(CategoryEntity oCategory) {
             // Generamos conexión temporal a la DB
             using (var db = new InventaryContext()) { 
                 // Actualizamos el objeto Categoria
